@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(255, 233, 224);
+}
+
+
+p{
+    color: green;
+}
+
+.box{
+    background-color: aqua;
+}
+
+.wrapper li {
+    background-color: blue;
+}
+
+.wrapper > p{
+    color:orange;
+    font-style: Italic;
+}
+
+
+.my-class{
+    font-weight: 42px;
+    color:orchid;
+
+}
+
+
+
+h1:hover{
+    color: blueviolet;
+}
+
+.wrapper a {
+    color:brown;
+}
