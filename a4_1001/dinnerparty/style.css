@@ -12,6 +12,7 @@
     font-family: "Roboto", sans-serif;
     min-height: 100vh;
     background-color: papayawhip;
+    align-items: center;
     }
 
     main, header, footer {
@@ -25,7 +26,7 @@
         height: 20vh;
         }
         main {
-        height: 60vh;
+        height: 160vh;
         }
 .invite-container{
     padding:200px
