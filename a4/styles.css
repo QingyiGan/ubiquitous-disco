@@ -1,7 +1,7 @@
 .top-nav {
     padding: 10px 0;
-    text-align:left;
-    font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+    text-align:right;
+    font-family: "EB Garamond", serif;
 
 }
 
@@ -19,7 +19,7 @@
 .top-nav ul li a {
     color:brown;
     text-decoration: none;
-    font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+    font-family: "EB Garamond", serif;
 }
 
 .main-content {
@@ -132,4 +132,17 @@ img {
     color: rgb(91, 91, 91);
     line-height: 130%;
     font-family: "EB Garamond", serif;
+}
+
+.footer a {
+    text-decoration:none;       
+    text-decoration-color:brown;         
+}
+
+.footer a:hover {
+    text-decoration-color: green; 
+}
+
+.footer a:target{
+    color:brown;
 }
