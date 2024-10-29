@@ -10,15 +10,27 @@ html{
 }
 
 nav {
+    height: 60px;
     /* Define the height of the navigation bar in pixels */
 }
 
 ul.flex-container {
   /* This is the parent element where you will set display:flex  */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: tomato;
+  line-height: 60px;
+  list-style-type: none;
+
 }
 
 a {
     /* These are the children elements */
-    color:black;
+    color:white;
     text-decoration: none;
+}
+
+a:hover{
+    color: aqua;
 }
