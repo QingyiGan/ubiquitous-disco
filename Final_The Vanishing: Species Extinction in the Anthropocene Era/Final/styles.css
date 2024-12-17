@@ -22,7 +22,7 @@ header h1 {
 }
 
 nav {
-    font-size:small;
+    font: size 12px;;
     text-align: right;
 }
 
@@ -95,7 +95,7 @@ nav a {
 .hero p {
     margin-top: 15px;
     max-width: 100%;
-    font-size:small;
+    font: size 12px;;
     margin: 10px 0;
     flex: 1; 
     text-align: left; 
