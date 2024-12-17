@@ -22,7 +22,7 @@ header h1 {
 }
 
 nav {
-    font: size 12px;;
+    font-size: 11px;;
     text-align: right;
 }
 
@@ -65,7 +65,7 @@ nav a {
     margin: 20px auto;
     padding-left: 60px;
     padding-right: 60px;
-    width: 90%;
+    width: 95%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -95,7 +95,7 @@ nav a {
 .hero p {
     margin-top: 15px;
     max-width: 100%;
-    font: size 12px;;
+    font-size: 11px;;
     margin: 10px 0;
     flex: 1; 
     text-align: left; 
