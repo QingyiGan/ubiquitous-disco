@@ -1,0 +1,217 @@
+body {
+    cursor: url('/Users/ganqingyi/Documents/学习/学校/GSAPP/Fall/Repository/ubiquitous-disco/Final_The Vanishing: Species Extinction in the Anthropocene Era/Shootgun.png'), auto;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9; /* 背景色 */
+    border: 50px solid blue; /* 30px灰色边框 */
+    box-sizing: border-box; /* 确保边框不会影响宽度 */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+header h1 {
+    margin: 0;
+    font-size:68px;
+    font-weight: bold;
+}
+
+nav {
+    font-size: xx-small;
+    text-align: right;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+}
+
+.news-ticker {
+    background-color: black;
+    color: white;
+    padding: 5px 0;
+    font-size: 12px;
+    font-weight: 100;
+    white-space: nowrap; 
+    overflow: hidden; 
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.news-ticker span {
+    display: inline-block;
+    padding-left: 100%; 
+    animation: marquee 55s linear infinite; 
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0); 
+    }
+    100% {
+        transform: translateX(-100%); 
+    }
+}
+
+.hero {
+    text-align: center;
+    margin: 20px auto;
+    padding-left: 120px;
+    padding-right: 120px;
+    width: 80%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.text {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%;
+    max-width: 1200px; 
+}
+
+.hero img {
+    max-width: 100%;
+    height: 400px;
+    margin-top: 20px; 
+    filter: grayscale(40%);
+}
+
+.hero h2 {
+    font-size: 24px;
+    margin-top: 3px;
+    text-align: left;
+    flex: 0.5; 
+}
+
+.hero p {
+    margin-top: 15px;
+    max-width: 100%;
+    font-size: x-small;
+    margin: 10px 0;
+    flex: 1; 
+    text-align: left; 
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px 5%;
+}
+
+/* Reset the box-sizing to ensure all padding and borders are included in the element's total width/height */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    cursor: url('/Users/ganqingyi/Documents/学习/学校/GSAPP/Fall/Repository/ubiquitous-disco/Final_The Vanishing: Species Extinction in the Anthropocene Era/Shootgun.png'), auto;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    border: 50px solid blue;
+    box-sizing: border-box;
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    margin: 20px auto;
+    padding-left: 120px;
+    padding-right: 120px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Card container styles */
+#card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; /* Ensure cards are spread evenly */
+    gap: 20px; /* Add space between cards */
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(33.333% - 20px); /* Ensure 3 cards per row with space */
+    max-width: 250px; /* Set max-width for each card */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, border 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    border: 3px solid blue; /* Blue border on hover */
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    filter: grayscale(80%);
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.2); /* Zoom image on hover */
+    filter: grayscale(0%); /* Remove grayscale on hover */
+}
+
+.card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 14px;
+    padding: 0 10px;
+    color: #666;
+}
+
+.card span {
+    display: block;
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.filterz {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px; /* Adjust spacing between items */
+    font-size: 12px;
+    padding-right: 30px;
+  }
+
+
+
+/* Footer */
+footer {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #666;
+}

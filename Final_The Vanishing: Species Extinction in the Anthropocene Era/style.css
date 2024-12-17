@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#intro-screen {
+    cursor: url('/Users/ganqingyi/Documents/学习/学校/GSAPP/Fall/Repository/ubiquitous-disco/Final_The Vanishing: Species Extinction in the Anthropocene Era/Shootgun.png'), auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: url('/Users/ganqingyi/Documents/学习/学校/GSAPP/Fall/Repository/ubiquitous-disco/Final_The Vanishing: Species Extinction in the Anthropocene Era/front2.jpeg') no-repeat center center fixed;
+    background-size: cover; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    
+}
+
+
+#intro-screen h1 {
+    position: absolute; /* Place text above the background */
+    font-size: 3rem; /* Adjust font size */
+    text-shadow: 2px 2px 4px black; /* Add shadow for better readability */
+    color: white;
+}
+
+
+#main-content {
+    height: 100vh;
+    background: url('rope-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden; /* Prevent scroll */
+}
+
+.hanging-line {
+    position: absolute;
+    top: 0;
+    left: calc(10% + 80% * var(--position));
+    height: var(--line-length);
+    width: 2px;
+    background: #ccc;
+    transform-origin: top center;
+    animation: swing 4s ease-in-out infinite;
+}
+
+.tag {
+    width: 100px;
+    height: 100px;
+    background: brown;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes swing {
+    0%, 100% {
+        transform: rotate(-3deg);
+    }
+    50% {
+        transform: rotate(3deg);
+    }
+}

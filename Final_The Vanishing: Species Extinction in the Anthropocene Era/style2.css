@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: whitesmoke;
+    overflow: hidden;
+}
+
+#intro-screen {
+    height: 100vh;
+    background: url('/Users/ganqingyi/Documents/学习/学校/GSAPP/Fall/Repository/ubiquitous-disco/Final_The Vanishing: Species Extinction in the Anthropocene Era/front2.jpeg') 
+        no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: url('/Users/ganqingyi/Documents/学习/学校/GSAPP/Fall/Repository/ubiquitous-disco/Final_The Vanishing: Species Extinction in the Anthropocene Era/Shootgun.png'), auto;
+}
+
+#intro-screen h1 {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+
+#main-content {
+    display: none;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+
+#rope-background {
+    display: flex;
+    flex-direction: row-reverse; /* Align items from right to left */
+    justify-content: space-between; /* Distribute tags evenly */
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.hanging-line {
+    position: relative;
+    display: inline-block;
+    left: calc(100% / 50 * var(--position));
+    height: var(--line-length);
+    width: 1px;
+    background: brown;
+    transform-origin: top center;
+    animation: swing 4s ease-in-out infinite;
+}
+
+.tag {
+    width: 40px; /* Width for rectangle shape */
+    height: 120px; /* Height for rectangle shape */
+    background: burlywood;
+    color: black;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    writing-mode: vertical-rl; /* Makes text vertical */
+}
+
+@keyframes swing {
+    0%, 100% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+}
